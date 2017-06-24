@@ -4,9 +4,7 @@ Performance test for C++ and Python publisher &amp; subscribers with 4 combinati
 Clone the git repository and build it in your ws using catkin_make
 # Method
 In this test, the method of calculating the latency is used to test the performance of C++ and Python publishers and subscribers.
-In the SuperAwesome message, the timestamp (converted to string as per required excercise description) is sent when the 
-message is sent from the publisher. At subscriber side, the another timestamp is recorded when the subscriber callback function is executed to get
-time when message is received. 
+In the SuperAwesome message, the timestamp is recorded and sent in the message converted to string as per required excercise description) before publishing. At subscriber side, the another timestamp is recorded when the subscriber callback function is executed to get time when message is received. 
 
 Time when message was sent is subtracted from time when message was received which gives the Latency between the transmission and reception of the message.
 Resolution of the time is set to ms. Latency should be close to 0 if the desired loop at publisher side matches with the rate at which
