@@ -2,7 +2,7 @@
 Performance test for C++ and Python publisher &amp; subscribers with 4 combinations
 # Usage
 Clone the git repository and build it in your ws using catkin_make
-#Method
+# Method
 In this test, the method of calculating the latency is used to test the performance of C++ and Python publishers and subscribers.
 In the SuperAwesome message, the timestamp (converted to string as per required excercise description) is sent when the 
 message is sent from the publisher. At subscriber side, the another timestamp is recorded when the subscriber callback function is executed to get
@@ -14,7 +14,7 @@ subscriber is receiving the message.
 
 Loop_rate is automatically changed in real time by incrementing the variable of loop rate after certain time. The maximum loop rate to test was 500kHz.
 
-#Results
+# Results
 
 C++_Publisher to C++_Subscriber: Both publisher and subscriber match the desired loop even at higher loop_rate frequencies as Latency is zero
 
